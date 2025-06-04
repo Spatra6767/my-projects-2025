@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="first-row">
+        <div class="gm-name">
+            <p>Tic</p>-<p style="color:red;">Tac</p>-<p style="color:blue;">Toe</p>
+        </div>
+         <div class="scr-brd">
+                    <table>
+                        <tr class="tr-scr-brd">
+                            <th>Player Name </th>
+                            <th>Score </th>
+                        </tr>
+                        <tr class="tr-scr-brd">
+                            <td class="playerO">player O :</td>
+                            <td class="Oscr">0</td>
+                        </tr>
+                        <tr class="tr-scr-brd">
+                            <td class="playerX">player X :</td>
+                            <td class="Xscr">0</td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <div class="winner"></div>
+        <audio id="Sound" src="winning.mp3" preload="auto"></audio>
+        <audio id="click" src="clickSound.mp3" preload="auto"></audio>
+        <audio id="error" src="Error.mp3" preload="auto"></audio>
+        
+            <div class="noMatch-div">
+                <input type="number" id="no-of-match" placeholder=" No. of match ( Enter )" min="1" max="100">
+                <button class="nom-smbt" onclick="checkNumber()">Ok</button>
+            </div>
+            
+            <div class="n-n-s">  <!-- no of match,newgame,score board; -->
+                <button class="nw-gm">New game</button>
+            </div>
+    <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button> 
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+       
+    </div>
+     <button class="rst-btn">Reset game</button>
+    </div>
+<script src="tic-tac-toe.js"></script>	
+</body>
+</html>

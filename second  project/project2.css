@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    font-family: arial;
+    border:border-box;
+}
+body{
+    height:600px;
+    width: 100% vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    background-image: url("https://images.unsplash.com/photo-1742105682489-94149abb1009?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNjB8fHxlbnwwfHx8fHw%3D");
+    background-size: cover;
+}
+.main-box{
+    height:400px;
+    width:700px;
+    border-radius:5%;
+    background-color:rgba(0,0,0,0.3);
+    border:2px solid rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.main-box1{
+    height:200px;
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+
+}
+input::placeholder{
+    color:black;
+}
+@keyframes anm{
+    0%{width:14em;}
+    100%{width:18em;}
+}
+#sub-box1{
+    border:none;
+    border-bottom: 2px solid black;
+    border-radius:0px;
+    background-color:transparent;
+    font-size:20px;
+    font-weight:700;
+    height:2.5em;
+    width:14em;
+}
+#sub-box1:hover{
+animation:anm 1s ease-in-out forwards;
+}
+#sub-box2{
+    border:none;
+    border-bottom: 2px solid black;
+    border-radius:0px;
+    font-weight:700;
+    background-color:transparent;
+    font-size:20px;;
+    height:2.5em;
+    width:14em;
+}
+#sub-box2:hover{
+animation:anm 1s ease-in-out forwards;
+}
+.mail{
+    font-size:30px;
+}
+.password{
+    font-size:30px;
+}
+.main-box2{
+    height:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.remember{
+    font-size:30px;
+}    
+.submit{
+    height:40px;
+    background-color: blue;
+    color:white;
+    width:300px;
+    font-size:25px;
+    border:none;
+    border-radius:20px;
+}
+.submit:hover{
+   background-color:rgb(19, 19, 197);
+   color:rgb(232, 221, 221);
+}
+.sub-box3{
+    display:flex;
+}
+.sub-box3 a{
+margin:40px;
+color:white;
+display: flex;
+width:150px;
+justify-content:space-evenly;
+}
+.sub-box3 a:hover{
+text-decoration:none;
+font-style: italic;
+}
+

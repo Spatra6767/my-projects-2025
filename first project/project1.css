@@ -1,0 +1,521 @@
+*{
+    margin:0;
+    font-family:arial;
+    border:border-box;
+}
+body{
+    width:1265px;
+}
+header{
+    position:sticky;
+    top:0px;
+    z-index:10;
+
+}
+.navbar1{
+    height:60px;
+    width:1265;
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.amzlogo{
+    width:128.73px;
+    height:60px;
+    background-image:url("https://bulldogdm.com/bulldogdmorg/wp-content/uploads/2021/05/amazon.png");
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.location{
+    width:60px;
+    display:flex;
+    padding-left:10px;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:flex-start;
+}
+.border:hover{
+    border:2px solid white;
+}
+.search{
+    display:flex;
+    border:none;
+    justify-content:center;
+    margin:0px 6px;
+}
+.search:hover{
+    border:3px solid orange;
+    border-radius:8px ;
+}
+#catagory{
+    height:38px;
+    width:45px;
+    border:none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color:#E6E6E6;
+    font-size:14px;
+}
+#search{
+    width:540.94px;
+    height:21px;
+    border:none;
+    padding:7px 10px 10px 0px;
+    font-size:16px;
+
+}
+#search-icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:orange;
+    width:30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.small{
+    font-size: 0.90rem;
+}
+.big{
+    font-size: 0.95rem;
+    font-weight:700;
+}
+.cart i{
+font-size:30px;
+
+}
+.navbar2{
+    height:39px;
+    background-color:#232F3E;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.navbar2 p{
+     font-weight: 700;
+}
+.navbar2 div{
+    height:36px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.all{
+    width:50px;
+}
+.main1 {
+    height:800px;
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/SiddMiniTV/5Apr/KD_RighRes_desk._CB547204356_.jpg");
+    background-size:cover;
+    position:relative;
+}
+@keyframes image{
+    0%{
+        background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/SiddMiniTV/5Apr/KD_RighRes_desk._CB547204356_.jpg");
+        background-position:0% 0%;
+    }
+    40%{
+        background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/nbshagun/CLP/2025/4April/D212311208_Update_DesktopHeroTemplate_3000x1200._CB547200534_.jpg");
+        background-position:40% 0%;
+    }
+    70%{
+        background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonPay/Siddhi/CBCC-PC_Hero_3000x1200_Prime1_sept24._CB563126190_.jpg");
+        background-position:0% 0%;
+    }
+    80%{
+        background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img24/Fresh/GW/Hero/April25/4/PC/04th_Fresh_GW_Hero_PC1x_Ambient._CB547110236_.jpg");
+        background-position:40% 0%;
+    }
+    100%{
+        background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img19/SiddMiniTV/5Apr/KD_RighRes_desk._CB547204356_.jpg");
+        background-position:40% 0%;
+    }
+
+}
+.main1:hover{
+    animation:image 15s ease-in-out infinite;
+}
+.main1 .box{
+display:flex;
+justify-content:space-evenly;
+}
+.fake-box{
+    height:250px;
+}
+.main1 .box-type1{
+    height:500px;
+    width:350px;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+} 
+.box-type1 p{
+    font-size:30px;
+    margin-left:7px;
+    font-weight:700;
+}
+#mob .part{
+    width:330px;
+    display:flex;
+    justify-content:space-evenly;
+}   
+#mob .part div{
+    height:150px;
+    width:130px;
+    background-color:green;
+}
+
+.mob1{
+    background-image:url("https://m.media-amazon.com/images/I/61FdXdaHKoL._AC_SY220_.jpg");
+    background-size:cover;
+}
+.mob2{
+    background-image:url("https://m.media-amazon.com/images/I/71IDrKGr6JL._AC_SY290_.jpg");
+    background-size:cover;
+}
+.mob3{
+    background-image:url("https://m.media-amazon.com/images/I/71vNgTH3MzL._AC_SY220_.jpg");
+    background-size:cover;
+}
+.mob4{
+    background-image:url("https://m.media-amazon.com/images/I/71x5XVC9UlL._AC_SY220_.jpg");
+    background-size:cover;
+}
+#deals .part{
+    width:330px;
+    display:flex;
+    justify-content:space-evenly;
+}   
+#deals .part div{
+    height:150px;
+    width:130px;
+    background-color:green;
+}
+
+.deals1{
+    background-image:url("https://m.media-amazon.com/images/I/61nt59pHs-L._AC_SY290_.jpg");
+    background-size:cover;
+}
+.deals2{
+    background-image:url("https://m.media-amazon.com/images/I/81a24Tvr+BL._AC_SY220_.jpg");
+    background-size:cover;
+}
+.deals3{
+    background-image:url("https://m.media-amazon.com/images/I/61avz3qDG2L._AC_SY290_.jpg");
+    background-size:cover;
+}
+.deals4{
+    background-image:url("https://m.media-amazon.com/images/I/61lAsZ3iN8L._AC_SY290_.jpg");
+    background-size:cover;
+}
+#buy-again .part{
+    width:330px;
+    display:flex;
+    justify-content:space-evenly;
+}   
+#buy-again .part div{
+    height:150px;
+    width:130px;
+    background-color:green;
+}
+
+.buy-again1{
+    background-image:url("https://m.media-amazon.com/images/I/511TWfm2HsL._AC_SY290_.jpg");
+    background-size:cover;
+}
+.buy-again2{
+    background-image:url("https://m.media-amazon.com/images/I/618jobvtmgL._AC_SY290_.jpg");
+    background-size:cover;
+}
+.buy-again3{
+    background-image:url("https://m.media-amazon.com/images/I/81BNQrU7lYL._AC_SY290_.jpg");
+    background-size:cover;
+}
+.buy-again4{
+    background-image:url("https://m.media-amazon.com/images/I/51goiHsovOL._AC_SY290_.jpg");
+    background-size:cover;
+}
+.box-type1 a{
+    font-size:20px;
+    text-decoration: none;
+    color:black;
+}
+.box-type1 a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.main2{
+    height:900px;
+    background-color: #020202;
+}
+.big-big{
+    font-size:20px;
+    font-weight:700;
+}
+.box-type2{
+    display:flex;
+    justify-content:space-evenly;
+}
+.box-type2 .product{
+    height:400px;
+    width:280px;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:10px;
+}
+.box-type2 #box4{
+background-color:transparent;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+#box4 #sub{
+    height:160px;
+    width:260px;
+    background-color:white;
+    padding:10px;
+}
+#box4 .sub-box1{
+    display:flex;
+    flex-direction:row;
+}
+#first-sub1{
+    height:160px;
+    width:170px;
+    background-color:transparent;
+    font-size:25px;
+    font-weight:700;
+}
+#second-sub2{
+    height:80px;
+    width:90px;
+    margin:40px 0px 40px 0px;
+    background-color: aqua;
+    background-image:url("https://m.media-amazon.com/images/I/21FjQXSpwkL.jpg");
+    background-size: cover;
+}
+#box4 .sub-box2{
+    display:flex;
+    flex-direction:column;
+    font-size:15px;
+    font-weight: 700;
+}
+.watch{
+    height:140px;
+    width:260px;
+    background-image: url("https://m.media-amazon.com/images/I/61CXKt177qL._AC_SY400_.jpg");
+    background-size: contain;
+}
+#box1 .sub-box1{
+    height:320px;
+    width:280px;
+    background-image:url("https://m.media-amazon.com/images/I/61VeTkEtovL._AC_SY350_.jpg");
+    background-size:contain;
+}
+#box2 .sub-box1{
+    height:320px;
+    width:280px;
+    background-image:url("https://m.media-amazon.com/images/I/61-6yDuvBxL._AC_SY350_.jpg");
+    background-size:contain;
+}
+#box3 .sub-box1{
+    height:320px;
+    width:270px;
+    background-image:url("https://m.media-amazon.com/images/I/71XLCdfas-L._AC_SY400_.jpg");
+    background-size:cover;
+}
+.details{
+    text-decoration:none;
+    color:black;
+}
+.details:hover{
+    color:blue;
+    font-style: italic;
+}
+.box-type3{
+    height:330px;
+    margin:50px 25px 0px 25px;
+    background-color:white;
+    padding:10px;
+}
+.box-type3 .more{
+    text-decoration:none;
+}
+.box-type3 .more:hover{
+    text-decoration:underline;
+    color:black;
+}
+#box-type3{
+    height:300px;
+    display:flex;
+    justify-content:space-evenly;
+}
+#shirt{
+    height:300px;
+    width:200px;
+    background-color:aqua;
+}
+
+.shirt1{
+    background-image:url("https://m.media-amazon.com/images/I/71nG3R1OPeL._AC_SY400_.jpg");
+    background-size:cover;
+}
+.shirt2{
+    background-image:url("https://m.media-amazon.com/images/I/61off1bGu0L._AC_SY400_.jpg");
+    background-size:cover;
+}
+.shirt3{
+    background-image:url("https://m.media-amazon.com/images/I/71ck9U5rmkL._AC_SY400_.jpg");
+    background-size:cover;
+}
+.shirt4{
+    background-image:url("https://m.media-amazon.com/images/I/611zHsFaFIL._AC_SY400_.jpg");
+    background-size:cover;
+}
+.shirt5{
+    background-image:url("https://m.media-amazon.com/images/I/81uTb5UwUgL._AC_SY400_.jpg");
+    background-size:cover;
+}
+
+
+
+
+.footer1{
+    height:10px;
+    background-color:rgb(19, 35, 47);
+    color:white;
+    padding:20px 0px 20px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.footer2{
+    height:370px;
+    background-color:#232F3E;
+    display:flex;
+    justify-content:space-evenly;
+    padding-top:50px;
+}
+.ftr2{
+    background-color:transparent;
+    padding:0px 15px 0px 15px;
+    color:white;
+}
+.txt{
+    padding-top:10px;
+}
+.bolder{
+    font-size:18px;
+    font-weight:700;
+}
+.non-bolder{
+    font-size:14px;
+    text-decoration:none;
+    color:white;
+}
+.non-bolder:hover{
+    text-decoration:underline;
+}
+.sub-footer21{
+    width:130px;
+}
+.sub-footer22{
+    width:140px;
+}
+.sub-footer23{
+    width:200px;
+}
+.sub-footer24{
+    width:200px;
+}
+.footer3{
+    height:70px;
+    background-color:#232F3E;
+    border-top:1px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer3 div{
+    width:90px;
+    height:50px;
+    background-image:url("https://bulldogdm.com/bulldogdmorg/wp-content/uploads/2021/05/amazon.png");
+    background-size:contain;
+}
+.footer4{
+    height:210px;
+    background-color:#0f1111;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    padding:0px 250px 0px 100px;
+}
+.sub-footer41{
+    height:50px;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-evenly;
+    padding:10px;
+}
+.sub-footer41 div{
+    width:190px;
+}
+.sub-footer42{
+    height:80px;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-evenly;
+}
+.sub-footer42 div{
+    width:190px;
+}
+.dec{
+    text-decoration:none;
+}
+.dec:hover{
+    text-decoration:underline;
+    color:white;
+}
+.sub-big{
+    color:white;
+    font-size:14px;
+    font-weight:700;
+}
+.sub-small{
+    color:white;
+    font-size:14px;
+}
+.sub-footer43{
+    height:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+.sub-footer431{
+    height:50%;
+    padding:0px 250px 0px 250px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+.sub-footer432{
+    height:50%;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+}

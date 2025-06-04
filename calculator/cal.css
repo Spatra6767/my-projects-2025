@@ -1,0 +1,83 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.container{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-div{
+    height:580px;
+    width:320px;
+    border-radius:10px;
+    background-color:blue;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    border:none;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    
+}
+.back-cross{
+  height:70px;
+    width:70px;
+    border-radius:50%;
+    border:none;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+       
+}
+.live-type{
+    width:310px;
+    height:50px;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    border:2px solid black;
+}
+.result{
+    width:310px;
+    height:50px;
+    margin:10px;
+    border-radius:10px;
+    border:2px solid black;
+}
+.Ac{
+   height:70px;
+    width:70px;
+    border-radius:50%;
+    border:none;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;  
+}
+.equal{
+     height:70px;
+    width:70px;
+    border-radius:50%;
+    border:none;
+    background-color:rgb(244, 127, 38);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+}
