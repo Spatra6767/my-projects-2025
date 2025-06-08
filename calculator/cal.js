@@ -5,6 +5,7 @@ let Result=document.querySelector(".result");
 let Ac=document.querySelector(".Ac");
 let Cross=document.querySelector(".cross");
 let backCross=document.querySelector(".back-cross");
+let Click=document.querySelector("#Click");
 
 
 let i=0;
@@ -13,6 +14,8 @@ let dataSave=[];
 boxes.forEach((box)=>{
   box.addEventListener("click",()=>{
     liveType.innerText+=box.innerText;
+    Click.play();
+    
     
     dataSave[i]=liveType.innerText;
     console.log(`Saved Input [${i}]: ${(dataSave[i])}`);

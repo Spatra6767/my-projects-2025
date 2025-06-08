@@ -19,6 +19,7 @@
     height:310px;
     width:310px;
     border:2px solid blue;
+    box-shadow:0 0 10px #00f;
     border-radius: 10px;
     background-color:blue;
     display:flex;
@@ -116,6 +117,7 @@ table {
     justify-content: center;
     align-items:center;
     color:red;
+    text-shadow: 0 0 10px #00f;
 }
 .winner{
     height:50px;

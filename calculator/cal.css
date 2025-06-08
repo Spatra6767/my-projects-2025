@@ -8,13 +8,15 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    background-image:url("https://i.pinimg.com/736x/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg")
 
 }
 .main-div{
-    height:580px;
-    width:320px;
-    border-radius:10px;
-    background-color:blue;
+    height:590px;
+    width:340px;
+    padding:12px 5px 15px 5px ;
+    border-radius:20px;
+    background-color:rgba(0,0,0,0.8);
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -25,11 +27,13 @@
     width:70px;
     border-radius:50%;
     border:none;
-    background-color:white;
+    background-color:rgba(0,0,0,0.3);
+    box-shadow:0 0 10px white;
     display:flex;
     justify-content:center;
     align-items: center;
     font-size: 30px;
+    color:white;
     
 }
 .back-cross{
@@ -50,34 +54,31 @@
     margin:10px;
     padding:10px;
     border-radius:10px;
+    background-color:rgba(255, 255, 255, 0.8);
     border:2px solid black;
+    color:black;
+    box-shadow:none;
 }
 .result{
     width:310px;
     height:50px;
     margin:10px;
+      background-color:rgba(255, 255, 255, 0.8);
     border-radius:10px;
     border:2px solid black;
+    color:black;
+    box-shadow:none;
 }
-.Ac{
-   height:70px;
-    width:70px;
-    border-radius:50%;
-    border:none;
-    background-color:white;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 30px;  
-}
-.equal{
+.sp-key{
      height:70px;
     width:70px;
     border-radius:50%;
     border:none;
-    background-color:rgb(244, 127, 38);
+    background-color:rgba(0,0,0,0.3);
+    box-shadow:0 0 10px orange;
+    color:orange;
     display:flex;
     justify-content:center;
     align-items: center;
-    font-size: 30px;
+    font-size: 30px; 
 }
