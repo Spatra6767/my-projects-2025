@@ -1,3 +1,63 @@
+let dataCollection = document.querySelector(".data-collection");
+let dtcollection = document.querySelector("#data-collection");
+let buttons = document.querySelectorAll(".button");
+let foryes=document.querySelector("#foryes");
+let yes = document.querySelector(".yes");
+let no = document.querySelector(".no");
+let playerXname = document.querySelector(".playerXname");
+let playerOname = document.querySelector(".playerOname");
+let submit=document.querySelector(".submit");
+let startCancel=document.querySelector(".start-cancel");
+let btns=document.querySelectorAll(".btn");
+let subContainer=document.querySelector(".sub-container");
+let msg=document.querySelector(".msg");
+
+foryes.style.display="none";
+dataCollection.style.display="none";
+subContainer.style.display="none";
+
+btns.forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    if (btn.innerText==="Start"){
+      dataCollection.style.display="flex";
+      startCancel.style.display="none";
+    }
+  })
+})
+
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    if(button.innerText==="Yes"){
+    dataCollection.style.display ="none";
+    foryes.style.display="block";
+    dtcollection.style.width="800px";}
+    else if(button.innerText==="No"){
+    dtcollection.style.display="none";
+     dtcollection.style.display="none";
+     subContainer.style.display="flex";
+     playerX.innerText="Player X"
+     playerO.innerText="Player O"
+    }
+  });
+});
+submit.addEventListener("click",()=>{
+  console.log(playerXname.value);
+  console.log(playerOname.value);
+  if(playerXname.value!==""&&playerOname.value!==""){
+  playerX.innerText=playerXname.value+"(X)";
+  playerO.innerText=playerOname.value+"(O)";
+  dtcollection.style.display="none";
+  subContainer.style.display="flex";
+  msg.innerText="";
+}
+  else{
+   msg.innerText="Both Player name required!";
+   errSound.play();
+  }
+})
+
+
 let boxes=document.querySelectorAll(".box");
 let winner=document.querySelector(".winner");
 let rstbtn=document.querySelector(".rst-btn");
@@ -9,6 +69,7 @@ let Xscr=document.querySelector(".Xscr");
 let winSound=document.querySelector("#Sound");
 let clkSound=document.querySelector("#click");
 let errSound=document.querySelector("#error");
+let information=document.querySelector("information");
 
 function checkNumber() {
  let matchno=noofMatch.value;  
@@ -59,7 +120,11 @@ const winnerCheck=()=>{
        let  val2=boxes[pattern[1]].innerText;
        let  val3=boxes[pattern[2]].innerText;
        if(val1!==""&&val1===val2&&val2===val3){
-       winner.innerText=`congratulation! player "${val1}" won (Reset the game)`;
+
+        if(val1==="O"){   
+       winner.innerHTML=`congrates! <span style="color:blue;">"${playerO.innerText}"</span>+1 points<span style="color:red;">..(reset game)</span>`;}
+        else{
+           winner.innerHTML=`congrates! <span style="color:blue;">"${playerX.innerText}"</span>+1 points <span style="color:red;">..(reset game)</span>`;} 
        for(i=0;i<3;i++)
        boxes[pattern[i]].style.backgroundColor="rgb(0, 255, 150)";
        winSound.play();
@@ -70,7 +135,11 @@ const winnerCheck=()=>{
        }
        const requiredWins = Math.floor(Number(noofMatch.value) / 2 +1);
             if (Number(Oscr.innerText) >= requiredWins || Number(Xscr.innerText) >= requiredWins) {
-                winner.innerText = `congratulation! player "${val1}" won the game (Enter New game)`;
+                
+        if(val1==="O"){   
+       winner.innerHTML=`congratulation! <span style="color:blue;">"${playerO.innerText}"</span> won<span style="color:red;">..(new game)</span>`;}
+        else{
+           winner.innerHTML=`congratulation! <span style="color:blue;">"${playerO.innerText}"</span>won <span style="color:red;">..(new game)</span>`;} 
                 rstbtn.disabled=true;
                 boxes.forEach((box)=>{
                  box.disabled=true;})

@@ -1,12 +1,41 @@
-const div = document.querySelector(".box");
+let dataCollection = document.querySelector(".data-collection");
+let dtcollection = document.querySelector("#data-collection");
+let buttons = document.querySelectorAll(".button");
+let foryes=document.querySelector("#foryes");
+let yes = document.querySelector(".yes");
+let no = document.querySelector(".no");
+let playerXname = document.querySelector(".playerXname");
+let playerOname = document.querySelector(".playerOname");
+let submit=document.querySelector(".submit");
+let startCancel=document.querySelector(".start-cancel");
+let btns=document.querySelectorAll(".btn");
 
-// Define an array of colors
-const colors = ["blue", "yellow", "red"];
+foryes.style.display="none";
+dataCollection.style.display="none";
 
-let i = 0;
+btns.forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    if (btn.innerText==="Start"){
+      dataCollection.style.display="flex";
+      startCancel.style.display="none";
+    }
+  })
+})
 
-div.onclick = () => {
-  div.style.backgroundColor = colors[i];
-  i = (i + 1) % colors.length; // Loop back to the start
-};
 
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    if(button.innerText==="Yes"){
+    dataCollection.style.display ="none";
+    foryes.style.display="block";
+    dtcollection.style.width="600px";}
+    else if(button.innerText==="No"){
+    dtcollection.style.display="none";
+    }
+  });
+});
+submit.addEventListener("click",()=>{
+  console.log(playerXname.value);
+  console.log(playerOname.value);
+  dtcollection.style.display="none";
+})

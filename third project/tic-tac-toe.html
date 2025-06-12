@@ -8,8 +8,28 @@
     <link rel="stylesheet" href="tic-tac-toe.css">
 </head>
 <body>
-
-    <div class="container">
+<div class="container">
+       <div class="msg"></div>
+         <div id="data-collection">
+            <div class="start-cancel">
+                <p>Are you ready to play?</p>
+                <div class="start btn">Start</div>
+                <div class="cancel btn">Cancel</div>
+            </div>
+            <div class="data-collection">
+                <p>Do you want to edit players name?</p>
+                <button class="yes button" value="yes">Yes</button>
+                <button class="no button" value="no">No</button>
+            </div>
+            <div id="foryes">
+                <p style="color:red;font-size: 20px;">*Up to 5 characters allowed.</p>
+                <input type="text" class="playerXname" placeholder="PlayerX Name" maxlength="5" >
+                <input type="text" class="playerOname" placeholder="PlayerO Name" maxlength="5" >
+                <button class="submit">Submit</button>
+            </div>
+         </div>
+    <div class="sub-container">
+        
         <div class="first-row">
         <div class="gm-name">
             <p>Tic</p>-<p style="color:red;">Tac</p>-<p style="color:blue;">Toe</p>
@@ -57,6 +77,7 @@
        
     </div>
      <button class="rst-btn">Reset game</button>
+    </div>
     </div>
 <script src="tic-tac-toe.js"></script>	
 </body>

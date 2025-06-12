@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Demo practice</title>
-    <link rel="stylesheet" href="demo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Demo Practice</title>
+  <link rel="stylesheet" href="demo.css" />
 </head>
 <body>
-    <div class="box">
-     <P>hello world!</P> 
+  <div class="container">
+    <div id="data-collection">
+      <div class="start-cancel">
+        <p>Are you ready to play?</p>
+        <div class="start btn">Start</div>
+        <div class="cancel btn">Cancel</div>
+      </div>
+    <div class="data-collection">
+        <p>Do you want to edit players name?</p>
+        <button class="yes button" value="yes">Yes</button>
+        <button class="no button" value="no">No</button>
+     </div>
+     <div id="foryes">
+        <input type="text" class="playerXname" placeholder="PlayerX Name">
+        <input type="text" class="playerOname" placeholder="PlayerO Name">
+        <button class="submit">Submit</button>
+     </div>
     </div>
- <script src="demo.js"></script>	
+  </div>
+  <script src="demo.js"></script>
 </body>
 </html>
